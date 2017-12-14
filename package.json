@@ -1,0 +1,21 @@
+{
+  "name": "universal-series",
+  "version": "0.0.1",
+  "description": "Convert string representations of series to arrays and back",
+  "main": "src/series.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "math",
+    "groups",
+    "series",
+    "number",
+    "numeric"
+  ],
+  "author": "Yanick Rochon <yanick.rochon@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
