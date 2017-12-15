@@ -1,6 +1,6 @@
 {
   "name": "universal-series",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert string representations of series and sequences to arrays and back",
   "main": "src/series.js",
   "scripts": {
