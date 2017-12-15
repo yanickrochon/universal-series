@@ -3,6 +3,13 @@ const GROUP_PATTERN = /^(-?\d+|-?\d+\.\d+)(?:-(-?\d+|-?\d+\.\d+))?$/;
 
 module.exports = function parser(str) {
   let offset = 0;
+
+  if (typeof str !== 'string') {
+    throw new TypeError('Series must be a string');
+  } else if (!str) {
+    return []; // shortcut
+  }
+
   return str.split(',').reduce(function (series, group) {
     const m = group.match(GROUP_PATTERN); //.map(Number).filter(function (n) { return !isNaN(n); });
 
@@ -24,5 +31,5 @@ module.exports = function parser(str) {
     offset = offset + group.length + 1;
 
     return series;
-  }, []);
+  }, []).filter(function (e, i, a) { return a.indexOf(e) === i; }).sort(function (a, b) { return a - b; });
 };

@@ -1,6 +1,6 @@
 # Universal Series
 
-Convert string representations of series to arrays and back
+Convert string representations of series and sequences to arrays and back
 
 
 ## Install

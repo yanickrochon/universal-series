@@ -1,6 +1,6 @@
 
 const parser = require('./parser');
-const compiler = require('compiler');
+const compiler = require('./compiler');
 
 
 module.exports.parse = parser;

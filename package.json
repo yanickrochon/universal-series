@@ -1,10 +1,11 @@
 {
   "name": "universal-series",
   "version": "0.0.1",
-  "description": "Convert string representations of series to arrays and back",
+  "description": "Convert string representations of series and sequences to arrays and back",
   "main": "src/series.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --forceExit",
+    "test-cov": "npm run test -- --coverage"
   },
   "keywords": [
     "math",
